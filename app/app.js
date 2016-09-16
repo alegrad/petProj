@@ -1,4 +1,4 @@
-angular.module("petProjLibrary", ['ui.router', 'ngResource', 'ngAnimate', 'mgcrea.ngStrap', 'petProj.services', 'petProj.controllers', 'petProj.directives']);
+angular.module("petProjLibrary", ['ui.router', 'ngResource', 'ngAnimate', 'mgcrea.ngStrap', 'petProj.services', 'petProj.controllers', 'petProj.directives', 'petProj.filters']);
 
 angular.module("petProjLibrary").config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
     $stateProvider
@@ -33,8 +33,3 @@ angular.module("petProjLibrary").config(function ($stateProvider, $urlRouterProv
     });
 });
 
-angular.module("petProjLibrary").filter('slice', function() {
-    return function(arr, start, end) {
-        return arr.slice(start, end);
-    };
-});
