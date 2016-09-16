@@ -1,0 +1,22 @@
+<div class="col-sm-9  books-panel">
+    <div class="row">
+        <ng-include src="'/templates/header.html'"></ng-include>
+        <div class="main">
+            <div class="row books-list">
+                <item-book
+                        ng-repeat="book in $ctrl.books | filter:{category:$ctrl.currentCategory} | slice : $ctrl.begin : $ctrl.end "
+                        book="book"></item-book>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-4 col-sm-offset-4">
+            <ul class="pagination">
+                <li ng-repeat="page in $ctrl.getNumberOfPages()"><a ng-click="$ctrl.goToPage(page)">{{page + 1}}</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+</div>
+</div>

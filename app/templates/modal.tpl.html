@@ -1,0 +1,36 @@
+<div class="modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+
+                <button type="button" class="close"
+                        ng-click="$hide()"> &times;
+                </button>
+                <h4 class="modal-title">Add To Cart</h4>
+            </div>
+
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <img ng-src={{::$ctrl.currentBook.thumb}} height = "150px" class="img-thumbnail">
+                        </div>
+                        <div class ="col-sm-8">
+                            <h3>{{::$ctrl.currentBook.name}}</h3>
+                            <p>By {{::$ctrl.currentBook.author}}</p>
+                            <p class="date_published">{{::$ctrl.currentBook.date_published}}</p>
+                            <p>{{::$ctrl.currentBook.review | limitTo:200}}...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit"
+                            class="btn btn-success"
+                            ng-click="$hide(); $ctrl.addToCart($ctrl.currentBook)"
+                            ng-disabled="currentBook.availability == 0">Add to Cart</button>
+                    <button type="button"
+                            class="btn btn-danger"
+                            ng-click="$hide()">Cancel</button>
+              </div>
+        </div>
+    </div>
+</div>

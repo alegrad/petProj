@@ -1,0 +1,22 @@
+<div class="col-sm-9">
+    <div class="row">
+        <ng-include src="'/templates/header.html'"></ng-include>
+        <div class="col-sm-12">
+            <h2>{{::$ctrl.book.name}}</h2>
+            <div class="col-sm-3">
+                <img ng-src="{{::$ctrl.book.thumb}}" height="300px" class="img-thumbnail">
+            </div>
+            <div class="col-sm-8">
+                <ul class="nav nav-tabs book-menu">
+                    <li><a ui-sref="single-book.info">Info</a></li>
+                    <li><a ui-sref="single-book.description">Description</a></li>
+                </ul>
+                <ui-view></ui-view>
+                <!--ui-sref="single-book({id: book.id})"-->
+                <a class="btn btn-primary" ng-disabled="$ctrl.book.availability==0"
+                   ng-click="$ctrl.book.availability<=0 || $ctrl.addToCart($ctrl.book)">Add To Cart</a>
+                <a class="btn btn-success " ng-click="$ctrl.back()">Back</a>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>petProj library</title>
+
+    <!--<link rel="stylesheet" type="text/css" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="styles/bootstrap-theme.min.css">-->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <script type="text/javascript" src="lib/angular.min.js"></script>
+    <script type="text/javascript" src="lib/angular-resource.min.js"></script>
+    <script type="text/javascript" src="lib/angular-ui-router.min.js"></script>
+    <script type="text/javascript" src="lib/angular-animate.min.js"></script>
+    <script type="text/javascript" src="lib/angular-strap.min.js"></script>
+    <script type="text/javascript" src="lib/angular-strap.tpl.min.js"></script>
+    <script type="text/javascript" src="controllers/controllers.js"></script>
+    <script type="text/javascript" src="services/services.js"></script>
+    <script type="text/javascript" src="directives/directives.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+
+</head>
+<body class="container" ng-app="petProjLibrary" ng-controller="MainController as main">
+<div class="row">
+
+    <side-panel categories="main.categories" current-category="main.currentCategory" begin="main.begin" end="main.end"></side-panel>
+    <ui-view></ui-view>
+</div>
+
+
+
+</body>
+</html>

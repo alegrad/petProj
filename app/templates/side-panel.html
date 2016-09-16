@@ -1,0 +1,12 @@
+<div class="col-sm-3">
+    <div class="side-panel panel panel-primary">
+        <div class="panel-heading">
+           <p><span class="glyphicon glyphicon-book"></span>Categories</p>
+        </div>
+        <div class="list-group">
+            <a class="list-group-item" ng-click="$ctrl.setCategory(); $ctrl.resetLimits()" ui-sref="book-list">All Categories</a>
+            <a class="list-group-item" ng-repeat="category in $ctrl.categories" ng-click="$ctrl.setCategory(category); $ctrl.resetLimits()" ui-sref="book-list">{{category}}</a>
+<!--          <span>{{$ctrl.currentCategory}}</span>-->
+        </div>
+    </div>
+</div>

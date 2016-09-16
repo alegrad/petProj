@@ -1,0 +1,21 @@
+<div class="col-sm-4 book">
+    <h4>{{::$ctrl.book.name | uppercase}}</h4>
+    <p><img ng-src="{{::$ctrl.book.thumb}}" class="thumb-big"></p>
+    <p>{{::$ctrl.book.review | limitTo:99}}...</p>
+    <div>
+        <div class="row">
+            <div class="col-sm-12 rating">
+            <span class="label label-warning ">Rating
+                <span class="glyphicon glyphicon-star" ng-repeat="i in $ctrl.getPositiveRating($ctrl.book.rating)"> </span>
+                <span class="glyphicon glyphicon-star-empty" ng-repeat="i in $ctrl.getNegativeRating($ctrl.book.rating)"> </span>
+            </span>
+            </div>
+        </div>
+        <!--  -->
+        <!--<a class="btn btn-primary" ng-click="$ctrl.getBook({$ctrl.book.id:'sdf'})">Details</a>-->
+       <!-- <a class="btn btn-primary" ng-click="$ctrl.setBook()">Details</a>-->
+        <a ui-sref="single-book({id:$ctrl.book.id})" class="btn btn-primary">Details</a>
+        <a href="#" class="btn btn-success " ng-click="$ctrl.book.availability<=0 || $ctrl.showModal($ctrl.book)" role="button"
+           ng-disabled="$ctrl.book.availability<=0">Add to Cart</a>
+    </div>
+</div>

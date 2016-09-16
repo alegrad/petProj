@@ -1,0 +1,108 @@
+.label.category{
+    font-size: 20px;
+    margin-top:10px;
+}
+
+.header{
+    height:44px;
+    background-color: #0881d2;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    color:white;
+}
+/*
+.main{
+    height:400px;
+    background-color: #761c19;
+}*/
+.thumb-big
+{
+    height: 199px;
+    margin:auto;
+}
+.books-list
+{
+    text-align: center;
+}
+
+.book{
+   margin-bottom:10px;
+   /* outline:1px solid red;*/
+    height:420px;
+}
+
+.book h2{
+    word-wrap:break-word;
+}
+
+.rating{
+    margin-bottom:5px;
+}
+
+.modal-backdrop.am-fade {
+    opacity: .5;
+    transition: opacity .15s linear;
+}
+
+.modal-backdrop.am-fade.ng-enter{
+    opacity: 0;
+}
+.modal-backdrop.am-fade.ng-enter.ng-enter-active{
+    opacity: .5;
+}
+.modal-backdrop.am-fade.ng-leave{
+    opacity: .5;
+
+}
+.modal-backdrop.am-fade.ng-leave.ng-leave-active{
+    opacity: 0;
+}
+
+.cart{
+    font-size:30px;
+    color:white;
+    margin-top:5px;
+}
+
+.date_published{
+    color:grey;
+}
+
+.book-menu{
+
+}
+.side-panel{
+    border: none;
+}
+.side-panel .panel-heading{
+    font-size:20px;
+    line-height:20px;
+    padding-bottom:0px;
+    background-color: #0881d2;
+}
+
+.title{
+    margin-left:20px;
+    font-size: 25px;
+}
+
+
+.alert{
+    position:absolute;
+    top:10px;
+    right:10px;
+    width:900px;
+    background-color: #94D198;
+    border-color: #5BB85F;
+    color: #387838;
+
+}
+
+.proj-title{
+    display:inline-block;
+    color: white;
+    margin-left:20px;
+    margin-top:10px;
+    line-height:20px;
+    font-size:20px;
+}
