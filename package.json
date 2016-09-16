@@ -1,0 +1,25 @@
+{
+  "name": "petProj2",
+  "version": "1.0.0",
+  "description": "petproj",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.14.0",
+    "nodemon": "^1.10.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alegrad/petProj.git"
+  },
+  "author": "alegrad",
+  "bugs": {
+    "url": "https://github.com/alegrad/petProj/issues"
+  },
+
+  "homepage": "https://github.com/alegrad/petProj#readme"
+}
